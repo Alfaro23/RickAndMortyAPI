@@ -1,0 +1,78 @@
+.card{
+    text-decoration: none;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
+    border-radius: 4px;
+    width: 240px;
+    margin-bottom: 24px;
+    overflow: hidden;
+    min-height: 350px;
+}
+.card:not(:nth-child(4n)){
+    margin-right: 20px;
+}
+.card__image{
+    width: 100%;
+}
+.card__text{
+    padding: 12px 16px;
+}
+.card__name{
+    color: rgba(0, 0, 0, 0.87);
+    mix-blend-mode: normal;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.15px;
+    margin: 0;
+}
+.card__species{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.25px;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+}
+
+@media screen and (max-width: 1100px) {
+    .main{
+        padding: 0 20px;
+    }
+
+    .card{
+        width: 300px;
+    }
+    .card:not(:nth-child(3n)){
+        margin-right: 20px;
+    }
+    .card:nth-child(3n){
+        margin-right: 0;
+    }
+
+}
+@media screen and (max-width: 995px) {
+    .card:nth-child(2n){
+        margin-right: 0;
+    }
+    .card:not(:nth-child(2n)){
+        margin-right: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 665px) {
+    .card{
+        margin-right: 0;
+    }
+    .card:not(:nth-child(3n)){
+        margin-right: 0px;
+    }
+    .card:not(:nth-child(4n)){
+        margin-right: 0px;
+    }
+}

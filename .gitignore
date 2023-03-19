@@ -18,6 +18,8 @@
 .env.test.local
 .env.production.local
 
+client_secret_32978081012-1nvlnnsmg7vj0nq88ms6pu7387k1h1di.apps.googleusercontent.com.json
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
