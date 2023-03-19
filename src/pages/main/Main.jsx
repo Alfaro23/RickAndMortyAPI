@@ -17,7 +17,7 @@ const Main = () => {
 
     const filteredPerson = heroes.filter(elem => {
         
-        return elem.name.toLowerCase().includes(localStorage.getItem("name").toLowerCase())
+        return elem.name.toLowerCase().includes(localStorage.getItem("name"))
     })
 
     return (
