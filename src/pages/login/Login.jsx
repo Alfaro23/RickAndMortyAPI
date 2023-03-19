@@ -11,7 +11,7 @@ const Login = () => {
         const userObj = jwtDecode(response.credential)
         console.log(userObj);
         
-        window.location.assign('http://localhost:3000/heroes/');
+        window.location.assign('https://rick-and-morty-api-v6u4.vercel.app/heroes/');
     }
 
     useEffect(() => {
